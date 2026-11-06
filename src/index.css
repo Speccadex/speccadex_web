@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* A logó színei, Tailwind osztályként használhatók: bg-brand-bg, text-brand-accent stb. */
+@theme {
+  --color-brand-bg: #0b1220;
+  --color-brand-panel: #111b2e;
+  --color-brand-accent: #22d3ee;
+}
