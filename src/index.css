@@ -1,8 +1,43 @@
 @import "tailwindcss";
 
-/* A logó színei, Tailwind osztályként használhatók: bg-brand-bg, text-brand-accent stb. */
-@theme {
-  --color-brand-bg: #0b1220;
-  --color-brand-panel: #111b2e;
-  --color-brand-accent: #22d3ee;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Világos téma*/
+:root {
+  color-scheme: light;
+  --bg: #eaf0f7;
+  --panel: #ffffff;
+  --field: #f1f5f9;
+  --fg: #0f172a;
+  --muted: #475569;
+  --line: rgb(15 23 42 / 0.14);
+  --accent: #0e7490;
+}
+
+/* Sötét téma*/
+.dark {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --panel: #111b2e;
+  --field: rgb(255 255 255 / 0.05);
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --line: rgb(255 255 255 / 0.1);
+  --accent: #22d3ee;
+}
+
+/* Tailwind osztályok */
+@theme inline {
+  --color-brand-bg: var(--bg);
+  --color-brand-panel: var(--panel);
+  --color-brand-accent: var(--accent);
+  --color-field: var(--field);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
 }

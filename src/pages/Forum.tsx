@@ -1,4 +1,4 @@
-import PagePlaceholder from "../components/PagePlaceholder.jsx";
+import PagePlaceholder from "../components/PagePlaceholder";
 
 export default function Forum() {
   return (

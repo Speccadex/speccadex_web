@@ -6,7 +6,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
         Állítsd össze a gépedet, <span className="text-brand-accent">okosan</span>.
       </h1>
-      <p className="mt-4 max-w-2xl text-lg text-slate-300">
+      <p className="mt-3 max-w-2xl text-muted">
         PC-konfigurátor és közösségi platform: válogass alkatrészeket, nézd meg a
         kompatibilitást és a szűk keresztmetszeteket, majd oszd meg a buildedet a
         fórumon.
