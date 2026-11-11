@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import PagePlaceholder from "../components/PagePlaceholder.jsx";
+import PagePlaceholder from "../components/PagePlaceholder";
 
 export default function NotFound() {
   return (
